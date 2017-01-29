@@ -1,6 +1,26 @@
+## Angular 2 Power Up
+
+A small Angular 2 Power Up starter app with Gulp, Webpack and Karma unit testing.
+
+## Introduction
+
+Welcome to Angular 2 Power Up!
+
+## Prerequisites
+
+You need to have Node.js and npm
+•Support Node v4 - latest
+•Support npm v3 - latest
+
 ## Installation
 
 Clone the repository, cd into the directory, and install the dependencies:
+https://github.com/Josefsosa/cli-gulp-starter
+
+```
+git clone https://github.com/Josefsosa/cli-gulp-starter.git
+```
+
 ```
 npm install
 ```
@@ -11,24 +31,44 @@ Use the Gitflow to work on this project:
 - Clone the repo from the dev branch
 - Create a new local branch to work on
 - Check in and add comments to changes on local branch
-- Push new local branch to remote on Newsource/bitbucket 
+- Push new local branch to remote on Newsource/bitbucket/github 
 - Do a pull request of your changes to the Dev branch 
 
 If all changes are good on dev branch Admin or someone from the Architecture team will merge into Master.  
 All Master merges from Dev branch will be rebased to remove history.
 
-## Development
-
-To run development mode, type the command: `gulp serve`
-The application will start on port 9000 with hot module replacement (HMR) turned on.
-
-## Production
-
-To build the application, type the command: `gulp build`
-
-## Architecture
-
-
+## Architecture and file structure 
+This project is configured to use a recursive module/component system 
+ 
+▒▒▒▒e2e
+▒▒▒▒gulp
+▒   ▒▒▒▒node
+▒   ▒▒▒▒profiles
+▒   ▒▒▒▒reports
+▒   ▒   ▒▒▒▒accessibility
+▒   ▒   ▒▒▒▒duplicate
+▒   ▒   ▒▒▒▒html-validator
+▒   ▒   ▒▒▒▒pdl
+▒   ▒   ▒▒▒▒seo
+▒   ▒   ▒▒▒▒tslint
+▒   ▒▒▒▒sitemap
+▒   ▒▒▒▒state-generator
+▒   ▒▒▒▒utils
+▒▒▒▒node_modules
+▒▒▒▒src
+    ▒▒▒▒app
+    ▒   ▒▒▒▒common-modules
+    ▒   ▒   ▒▒▒▒constant
+    ▒   ▒   ▒▒▒▒navbar-module
+    ▒   ▒▒▒▒home
+    ▒   ▒▒▒▒todolist
+    ▒   ▒▒▒▒weather
+    ▒▒▒▒assets
+    ▒   ▒▒▒▒fonts
+    ▒   ▒   ▒▒▒▒Roboto
+    ▒   ▒▒▒▒images
+    ▒   ▒▒▒▒styles
+    ▒▒▒▒environments
 
 ## Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
@@ -49,7 +89,6 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 Before running the tests make sure you are serving the app via `ng serve`.
-
 
 ## Running Reports Reports (coming soon) 
 Run `gulp reports` to execute the all of the current reports. 
@@ -79,7 +118,7 @@ We are using the CLI to generate new Module/Components/routers and pipes Only
 
 ## Backlog of functionality remaining
   
-      Type	Story											                PTS
+      Type	Story											                    PTS
 - [ ] DOC		DOC - PDL/Analytics for NG 2 Architecture		3
 - [ ] DEV		DEV - PDL/Analytics for NG 2 Architecture		5
 - [ ] DOC		DOC - Search on the CSL-WebPlatform				3
@@ -102,17 +141,17 @@ We are using the CLI to generate new Module/Components/routers and pipes Only
 - [ ] DOC		DOC – AEM Preview Environment					3
 - [ ] DEV		DEV – AEM Preview Environment					5
 - [ ] DOC		DOC – NG 2.0 Security Architecture				3
-- [ ] DEV		DEV - Authentication OAuth2 Integration			5
-- [ ] DOC		DOC – NG 2.0 Data persistence					3
-- [ ] DEV		DEV – NG 2.0 Protected Routes					5
-- [ ] DOC		DOC – NG 2.0 Sanky Graph API Reporting			3
-- [ ] DOC		DOC - 2.0 TS E2E & Unit Testing Guidelines		5
-- [ ] DOC		DOC - Adobe Marketing Cloud Integration			5
-- [ ] DOC		DOC - CDN Integration							3
-- [ ] DOC		DOC - Modularize 3rd Party integration 			3
-- [ ] DOC		DOC - NativeScript export to mobile app			3
-- [ ] DOC		DOC - Angular Material 2 for Accessibility		3
-- [ ] DOC		DOC - AME/NG Preview Environment				3
+- [ ] DEV		DEV - Authentication OAuth2 Integration			    5
+- [ ] DOC		DOC – NG 2.0 Data persistence					          3
+- [ ] DEV		DEV – NG 2.0 Protected Routes					          5
+- [ ] DOC		DOC – NG 2.0 Sanky Graph API Reporting			      3
+- [ ] DOC		DOC - 2.0 TS E2E & Unit Testing Guidelines		  5
+- [ ] DOC		DOC - Adobe Marketing Cloud Integration			    5
+- [ ] DOC		DOC - CDN Integration							              3
+- [ ] DOC		DOC - Modularize 3rd Party integration 			    3
+- [ ] DOC		DOC - NativeScript export to mobile app			    3
+- [ ] DOC		DOC - Angular Material 2 for Accessibility		  3
+- [ ] DOC		DOC - AME/NG Preview Environment				        3
 - [ ] DEV		DEV - Components Performance Report Slow/Comps  5
 
  
