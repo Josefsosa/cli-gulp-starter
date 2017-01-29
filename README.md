@@ -40,35 +40,35 @@ All Master merges from Dev branch will be rebased to remove history.
 ## Architecture and file structure 
 This project is configured to use a recursive module/component system 
  
-▒▒▒▒e2e
-▒▒▒▒gulp
-▒   ▒▒▒▒node
-▒   ▒▒▒▒profiles
-▒   ▒▒▒▒reports
-▒   ▒   ▒▒▒▒accessibility
-▒   ▒   ▒▒▒▒duplicate
-▒   ▒   ▒▒▒▒html-validator
-▒   ▒   ▒▒▒▒pdl
-▒   ▒   ▒▒▒▒seo
-▒   ▒   ▒▒▒▒tslint
-▒   ▒▒▒▒sitemap
-▒   ▒▒▒▒state-generator
-▒   ▒▒▒▒utils
-▒▒▒▒node_modules
-▒▒▒▒src
-    ▒▒▒▒app
-    ▒   ▒▒▒▒common-modules
-    ▒   ▒   ▒▒▒▒constant
-    ▒   ▒   ▒▒▒▒navbar-module
-    ▒   ▒▒▒▒home
-    ▒   ▒▒▒▒todolist
-    ▒   ▒▒▒▒weather
-    ▒▒▒▒assets
-    ▒   ▒▒▒▒fonts
-    ▒   ▒   ▒▒▒▒Roboto
-    ▒   ▒▒▒▒images
-    ▒   ▒▒▒▒styles
-    ▒▒▒▒environments
+- -e2e
+- --gulp
+- ------node
+- --------profiles
+- --------reports
+- ----------accessibility
+- ----------duplicate
+- ----------html-validator
+- ----------pdl
+- ----------seo
+- ----------tslint
+- ------sitemap
+- ------state-generator
+- ------utils
+- --node_modules
+- --src
+- -----app
+- ----------common-modules
+- ------------constant
+- ------------navbar-module
+- ----------home
+- ----------todolist
+- ----------weather
+- -----assets
+- ----------fonts
+- ------------Roboto
+- ----------images
+- ----------tyles
+- --------environments
 
 ## Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
@@ -119,11 +119,11 @@ We are using the CLI to generate new Module/Components/routers and pipes Only
 ## Backlog of functionality remaining
   
       Type	Story											                    PTS
-- [ ] DOC		DOC - PDL/Analytics for NG 2 Architecture		3
-- [ ] DEV		DEV - PDL/Analytics for NG 2 Architecture		5
-- [ ] DOC		DOC - Search on the CSL-WebPlatform				3
-- [ ] DEV		DEV - Search on the CSL-WebPlatform				5
-- [ ] DOC		DOC - AEM/NG Authoring Patterns & Guidelines	3
+- [ ] DOC		DOC - PDL/Analytics for NG 2 Architecture		- 3
+- [ ] DEV		DEV - PDL/Analytics for NG 2 Architecture		- 5
+- [ ] DOC		DOC - Search on the CSL-WebPlatform				  - 3
+- [ ] DEV		DEV - Search on the CSL-WebPlatform				  - 5
+- [ ] DOC		DOC - AEM/NG Authoring Patterns & Guidelines	- 3
 - [ ] DEV 	DEV - AEM/NG Authoring Patterns Implementation	5
 - [ ] DEV		DEV - Authentication OAuth2 Integration			5
 - [ ] DEV		DEV - Angular 2 / AEM 6.X Interaction patterns	5
