@@ -8,9 +8,9 @@ Welcome to Angular 2 Power Up!
 
 ## Prerequisites
 
-You need to have Node.js and npm
-•Support Node v4 - latest
-•Support npm v3 - latest
+You need to have Node.js and npm as well as nvm 
+- Support Node v4 - latest
+- Support npm v3 - latest
 
 ## Installation
 
@@ -83,6 +83,7 @@ e-services/
 ```
  
 ## Development server
+
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
@@ -100,9 +101,11 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 ## Running end-to-end tests
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+
 Before running the tests make sure you are serving the app via `ng serve`.
 
 ## Running Reports Reports (coming soon) 
+
 Run `gulp reports` to execute the all of the current reports. 
 
 ## Hot Module Replacement
@@ -143,7 +146,6 @@ Report Name	                      Description
 - [ ] NG Documentation	NG Documentation provides us an in code documentation methodology that generates all the Source code documentation.
 ```
 
-
 ## Backlog of functionality remaining
 ```  
       Type	Story											                    PTS
@@ -183,5 +185,3 @@ Report Name	                      Description
 - [ ] DEV		DEV - Components Performance Report Slow/Comps  5
 ```
  
-
-
