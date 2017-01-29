@@ -40,7 +40,7 @@ All Master merges from Dev branch will be rebased to remove history.
 ## Architecture and file structure 
 This project is configured to use a recursive module/component system 
  
- 
+```
 e-services/
   ├──gulp/                      * Gulp Folder
   │   ├──node/                  * WebApp: folder
@@ -80,7 +80,7 @@ e-services/
   ├──tsconfig.json              * config that webpack uses for typescript
   ├──package.json               * what npm uses to manage it's dependencies
   └──webpack.config.js          * webpack main configuration file
-
+```
  
 ## Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
