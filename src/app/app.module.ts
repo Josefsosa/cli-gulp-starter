@@ -5,9 +5,9 @@ import { APP_PROVIDERS } from './app.providers';
 import { AppComponent } from './app.component';
 import { appRoutingProviders, routing } from './app.routing';
 import { NavbarModule } from './common-modules';
-import { HomeModule } from './home/home.module';
-import { TodolistModule } from './todolist/todolist.module';
-import { WeatherModule } from './weather/weather.module';
+import { HomeModule } from './app-modules/home-module/home.module';
+import { TodolistModule } from './app-modules/todolist-module/todolist.module';
+import { WeatherModule } from './app-modules/weather-module/weather.module';
 
 @NgModule({
     declarations: [

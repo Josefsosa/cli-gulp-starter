@@ -40,36 +40,48 @@ All Master merges from Dev branch will be rebased to remove history.
 ## Architecture and file structure 
 This project is configured to use a recursive module/component system 
  
-- -e2e
-- --gulp
-- ------node
-- --------profiles
-- --------reports
-- ----------accessibility
-- ----------duplicate
-- ----------html-validator
-- ----------pdl
-- ----------seo
-- ----------tslint
-- ------sitemap
-- ------state-generator
-- ------utils
-- --node_modules
-- --src
-- -----app
-- ----------common-modules
-- ------------constant
-- ------------navbar-module
-- ----------home
-- ----------todolist
-- ----------weather
-- -----assets
-- ----------fonts
-- ------------Roboto
-- ----------images
-- ----------tyles
-- --------environments
+ 
+e-services/
+  ├──gulp/                      * Gulp Folder
+  │   ├──node/                  * WebApp: folder
+  │   │   ├──app.spec.ts        * a simple test of
+  |   ├──helpers.js             * helper functions for our configuration files
+  |   ├──spec-bundle.js         * ignore this magic that sets up our angular 2 testing environment
+  |   ├──karma.conf.js          * karma config for our unit tests
+  |   ├──protractor.conf.js     * protractor config for our end-to-end tests
+  │   ├──webpack.dev.js         * our development webpack config
+  │   ├──webpack.prod.js        * our production webpack config
+  │   └──webpack.test.js        * our testing webpack config
+  │   ├──reports                * a Reports folder
+  │
+  ├──src/                       * our source files that will be compiled to javascript
+  |   ├──main.browser.ts        * our entry file for our browser environment
+  │   │
+  |   ├──index.html             * Index.html: where we generate our index page
+  │   │
+  |   ├──polyfills.ts           * our polyfills file
+  │   │
+  |   ├──vendor.browser.ts      * our vendor file
+  │   │
+  │   ├──app/                   * WebApp: folder
+  │   │   ├──app.spec.ts        * a simple test of components in app.ts
+  │   │   ├──app.e2e.ts         * a simple end-to-end test for /
+  │   │   └──app.ts             * App.ts: a simple version of our App component components
+  │   │
+  │   └──assets/                * static assets are served here
+  │       ├──icon/              * our list of icons from www.favicon-generator.org
+  │       ├──service-worker.js  * ignore this. Web App service worker that's not complete yet
+  │       ├──robots.txt         * for search engines to crawl your website
+  │       └──humans.txt          * for humans to know who the developers are
+  │
+  │
+  ├──tslint.json                * typescript lint config
+  ├──typedoc.json               * typescript documentation generator
+  ├──tsconfig.json              * config that webpack uses for typescript
+  ├──package.json               * what npm uses to manage it's dependencies
+  └──webpack.config.js          * webpack main configuration file
 
+ 
 ## Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
@@ -105,6 +117,9 @@ The following files are required through the loader, but refresh the browser (as
 ## Notes
 
 We are using the CLI to generate new Module/Components/routers and pipes Only
+
+This command starts the ng serve and gulp 
+"g-start": "start ng serve && start gulp"
 
 ## TODO Tasks
 

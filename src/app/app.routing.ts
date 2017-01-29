@@ -1,8 +1,8 @@
 import { Routes, RouterModule } from '@angular/router';
 
-import { HomeRoutes } from './home/index';
-import { TodolistRoutes } from './todolist/index';
-import { WeatherRoutes } from './weather/index';
+import { HomeRoutes } from './app-modules/home-module/index';
+import { TodolistRoutes } from './app-modules/todolist-module/index';
+import { WeatherRoutes } from './app-modules/weather-module/index';
 
 const appRoutes: Routes = [
     ...HomeRoutes,
