@@ -1,10 +1,16 @@
 import { Component } from '@angular/core';
 
+import { CONSTANTS } from './common-modules';
+
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+    moduleId: module.id,
+    selector: 'as-main-app',
+    templateUrl: 'app.html'
 })
 export class AppComponent {
-  title = 'app works!';
+    public appBrand: string;
+
+    constructor() {
+        this.appBrand = CONSTANTS.MAIN.APP.BRAND;
+    }
 }
