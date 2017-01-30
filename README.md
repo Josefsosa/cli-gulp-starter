@@ -46,7 +46,7 @@ All Master merges from Dev branch will be rebased to remove history.
 This project is configured to use a recursive module/component system 
  
 ```
-e-services/
+app-root/
 ├──src/                             * our source files that will be compiled to javascript
 │   ├──favicon.ico                  * our entry file for our browser environment
 │   │   
