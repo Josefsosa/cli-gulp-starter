@@ -11,8 +11,13 @@ Welcome to Angular 2 Power Up!
 You need to have Node.js and npm as well as nvm 
 - Support Node v4 - latest
 - Support npm v3 - latest
+- angular-cli - Latest
 
 ## Installation
+
+```
+install npm install -g angular-cli
+```
 
 Clone the repository, cd into the directory, and install the dependencies:
 https://github.com/Josefsosa/cli-gulp-starter
@@ -42,44 +47,105 @@ This project is configured to use a recursive module/component system
  
 ```
 e-services/
-  ├──gulp/                      * Gulp Folder
-  │   ├──node/                  * WebApp: folder
-  │   │   ├──app.spec.ts        * a simple test of
-  |   ├──helpers.js             * helper functions for our configuration files
-  |   ├──spec-bundle.js         * ignore this magic that sets up our angular 2 testing environment
-  |   ├──karma.conf.js          * karma config for our unit tests
-  |   ├──protractor.conf.js     * protractor config for our end-to-end tests
-  │   ├──webpack.dev.js         * our development webpack config
-  │   ├──webpack.prod.js        * our production webpack config
-  │   └──webpack.test.js        * our testing webpack config
-  │   ├──reports                * a Reports folder
-  │
-  ├──src/                       * our source files that will be compiled to javascript
-  |   ├──main.browser.ts        * our entry file for our browser environment
-  │   │
-  |   ├──index.html             * Index.html: where we generate our index page
-  │   │
-  |   ├──polyfills.ts           * our polyfills file
-  │   │
-  |   ├──vendor.browser.ts      * our vendor file
-  │   │
-  │   ├──app/                   * WebApp: folder
-  │   │   ├──app.spec.ts        * a simple test of components in app.ts
-  │   │   ├──app.e2e.ts         * a simple end-to-end test for /
-  │   │   └──app.ts             * App.ts: a simple version of our App component components
-  │   │
-  │   └──assets/                * static assets are served here
-  │       ├──icon/              * our list of icons from www.favicon-generator.org
-  │       ├──service-worker.js  * ignore this. Web App service worker that's not complete yet
-  │       ├──robots.txt         * for search engines to crawl your website
-  │       └──humans.txt          * for humans to know who the developers are
-  │
-  │
-  ├──tslint.json                * typescript lint config
-  ├──typedoc.json               * typescript documentation generator
-  ├──tsconfig.json              * config that webpack uses for typescript
-  ├──package.json               * what npm uses to manage it's dependencies
-  └──webpack.config.js          * webpack main configuration file
+├──src/                             * our source files that will be compiled to javascript
+│   ├──favicon.ico                  * our entry file for our browser environment
+│   │   
+    ³   index.html
+    ³   main.ts
+    ³   polyfills.ts
+    ³   styles.css
+    ³   test.ts
+    ³   tree.txt
+    ³   tsconfig.json
+    ³   
+│   │   ├──app/                     * our source TS files that will be compiled to javascript
+    ³   ³   app.component.spec.ts
+    ³   ³   app.component.ts
+    ³   ³   app.html
+    ³   ³   app.module.ts
+    ³   ³   app.providers.ts
+    ³   ³   app.routing.ts
+    ³   ³   bundle.ts
+    ³   ³   main.ts
+    ³   ³   
+    ³   app-modules
+    ³   ³   home-module
+    ³   ³   ³       home.component.ts
+    ³   ³   ³       home.css
+    ³   ³   ³       home.html
+    ³   ³   ³       home.module.ts
+    ³   ³   ³       home.routes.ts
+    ³   ³   ³       index.ts
+    ³   ³   ³       
+    ³   ³   todolist-module
+    ³   ³   ³       completed-filter.pipe.spec.ts
+    ³   ³   ³       completed-filter.pipe.ts
+    ³   ³   ³       index.ts
+    ³   ³   ³       todo.model.ts
+    ³   ³   ³       todolist.component.spec.ts
+    ³   ³   ³       todolist.component.ts
+    ³   ³   ³       todolist.html
+    ³   ³   ³       todolist.module.ts
+    ³   ³   ³       todolist.routes.ts
+    ³   ³   ³       
+    ³   ³   weather-module
+    ³   ³           index.ts
+    ³   ³           weather.component.ts
+    ³   ³           weather.components.spec.ts
+    ³   ³           weather.css
+    ³   ³           weather.html
+    ³   ³           weather.module.ts
+    ³   ³           weather.routes.ts
+    ³   ³           
+    ³   common-modules
+    ³       ³   index.ts
+    ³       ³   
+    ³       constant
+    ³       ³       .gitignore
+    ³       ³       env.model.ts
+    ³       ³       env.ts
+    ³       ³       index.ts
+    ³       ³       main.ts
+    ³       ³       
+    ³       navbar-module
+    ³               index.ts
+    ³               navbar.component.html
+    ³               navbar.component.ts
+    ³               navbar.module.ts
+    ³               
+    assets
+    ³   ³   .gitkeep
+    ³   ³   
+    ³   fonts
+    ³   ³   ÀÄÄÄRoboto
+    ³   ³           Roboto-Regular-webfont.eot
+    ³   ³           Roboto-Regular-webfont.svg
+    ³   ³           Roboto-Regular-webfont.ttf
+    ³   ³           Roboto-Regular-webfont.woff
+    ³   ³           
+    ³   images
+    ³   ³       Footer.PNG
+    ³   ³       header_logo.png
+    ³   ³       LandingPage1.PNG
+    ³   ³       ng2-logo.png
+    ³   ³       ng2.jpg
+    ³   ³       powerup-logo2.png
+    ³   ³       
+    ³   styles
+    ³           bootstrap.scss
+    ³           fonts.scss
+    ³           functions.scss
+    ³           main.css
+    ³           main.scss
+    ³           mixins.scss
+    ³           module.scss
+    ³           overrides.scss
+    ³           variables.scss
+    ³           _bootstrap.variables.scss
+    ³           
+    Äenvironments
+            environment.prod.ts
+            environment.ts
 ```
  
 ## Development server
